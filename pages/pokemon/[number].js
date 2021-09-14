@@ -8,7 +8,6 @@ const pokemon = ({ pokeman }) => {
         <h1>{pokeman.name}</h1>
         <img src={pokeman.sprites.front_default} style={{ height: 400 }} />
         <img src={pokeman.sprites.front_shiny} style={{ height: 400 }} />
-        <h1> {pokeman.moves.move} </h1>
 
         <div>
           <Link href="/">
@@ -26,5 +25,8 @@ pokemon.getInitialProps = async ({ query }) => {
         .then(response => response.data);
     return { pokeman };
 };
+
+
+
 
 export default pokemon;
