@@ -5,20 +5,20 @@ const Poke = ({ pokemon }) => (
 
         <h1>Pokedex</h1>
         {pokemon.map((pokeman, i) => {
-            return(
-                // <a href={pokeman.name}>
-                // <p>
-                //     {i +1} {pokeman.name}
+            return (
+              // <a href={pokeman.name}>
+              // <p>
+              //     {i +1} {pokeman.name}
 
-                // </p>
-                // </a>
-                <p>
-                    <Link href={`../pokemon/${i +1}`}>
-                        <a>
-                            {i+1} {pokeman.name}
-                        </a>
-                    </Link>
-                </p>
+              // </p>
+              // </a>
+              <p key={pokeman.id}>
+                <Link href={`../pokemon/${i + 1}`}>
+                  <a>
+                    {i + 1} {pokeman.name}
+                  </a>
+                </Link>
+              </p>
             );
         })}
     </div>
