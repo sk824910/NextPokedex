@@ -7,16 +7,23 @@ Each Pokemon retrived from the public API has its own dynamic page to display pe
 
 ## Getting Started
 Dependencies
+```
    "axios": "^0.21.1",
     "next": "11.1.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "swr": "^1.0.0"
+```
     
 
 ## Executing program
--Pull repo
 
+You can view the functioning app hosted by Vercel!
+https://next-pokedex-ten.vercel.app/
+
+Or, you can proceed with the following steps.
+
+-Pull repo
 ```bash
 npm run dev
 # or
