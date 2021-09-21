@@ -37,11 +37,9 @@ export default function Home(address) {
     <div>
       <div className={style.container}>
         <div className={style.content}>
-          <h1>Pratham</h1>
+          <h1>Ethereum Address</h1>
           <h3>
-            I love designing websites and keep things as simple as possible. My
-            goals is to focus on minimalism and conveying the message that you
-            want to send
+            Steven keashon test
           </h3>
         </div>
         <div className={style.flap}></div>
