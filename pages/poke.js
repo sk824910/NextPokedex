@@ -27,7 +27,7 @@ const Poke = ({ pokemon }) => (
 
 Poke.getInitialProps = async () => {
     const pokemon = await axios
-        .get('https://pokeapi.co/api/v2/pokemon?limit=5')
+        .get('https://pokeapi.co/api/v2/pokemon?limit=20')
         .then(response => response.data.results);
         return {pokemon};
     
