@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
-import style from "../styles/card.module.css";
+import style from "../styles/Card.module.css";
 import React, { useEffect, useState } from "react";
 
 
@@ -33,7 +33,6 @@ return address;
 export default function Home(address) {
 
 
-    const [showModal, setShowModal] = useState(false);
   return (
     <div>
       <div className={style.container}>
@@ -49,7 +48,6 @@ export default function Home(address) {
       </div>
       <div className={styles.container1}>
         <button onClick={enableMeta}>Connect to your Wallet</button>
-        <button onClick="placeholder">Display Address</button>
       </div>
     </div>
   );
